@@ -3043,10 +3043,26 @@ input, select, textarea {
 	.table-wrapper {
 		-webkit-overflow-scrolling: touch;
 		overflow-x: auto;
+		table-layout: auto;
 	}
 
 	table {
 		margin: 0 0 2em 0;
+		width: 100%;
+	}
+
+	.table-wrapper > table td.amount {
+		text-align: right;
+		white-space: nowrap;
+	}
+
+	.table-wrapper > table td.meassurement {
+		padding-left: 0;
+		text-align: left;
+		white-space: nowrap;
+	}
+
+	.table-wrapper > table td.ingredient {
 		width: 100%;
 	}
 
@@ -3071,6 +3087,7 @@ input, select, textarea {
 			padding: 0 0.75em 0.75em 0.75em;
 			text-align: left;
 		}
+
 
 		table thead {
 			border-bottom: solid 2px rgba(160, 160, 160, 0.3);
@@ -3105,6 +3122,7 @@ input, select, textarea {
 			table.alt tfoot {
 				border-top: 0;
 			}
+
 
 /* Header */
 
